@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/free-vector/blue-spotlight-illumination-stage-vector-realistic-illustration-bright-lamps-shining-sparkling-particles-shimmering-floor-air-during-theater-performance-music-concert-circus-show_107791-24315.jpg?w=1380&t=st=1725117469~exp=1725118069~hmac=db930d82f8f9f34f0fc438f623b049210f15e083f5dde13c7f992ce5cc8abf94');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 77, 64, 0.8); /* Dark Teal with opacity for better contrast */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+p.text-muted {
+    color: #d0d0d0;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card h2 {
+    color: #000000; /* Black text for headings in the card */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000; /* Black text */
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #cccccc; /* Light border for input fields */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #000000; /* Black text for input fields */
+    background-color: #ffffff; /* White background for input fields */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #004d40; /* Dark Teal */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #00332a; /* Slightly darker teal */
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #00221a; /* Even darker teal */
+}
+
+#greeting {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #004d40; /* Dark Teal */
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
