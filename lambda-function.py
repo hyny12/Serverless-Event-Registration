@@ -1,12 +1,12 @@
 import json
 import boto3
 
-# Initialize the DynamoDB resource
+
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('EventRegistrations')
 
 def lambda_handler(event, context):
-    # Get the action from the event (e.g., "register" or "get_registrations")
+ 
     action = event.get('action', 'get_registrations')
     
     if action == 'register':
